@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #5e4b8b, #3b0a45);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+            opacity: 0.2;
+            z-index: 0;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffeb3b;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 1;
+        }
+        a {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #9c27b0;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+        a:hover {
+            background-color: #7b1fa2;
+            box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+            transform: translateY(-3px);
+        }
+        .decorative-element {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #9c27b0, #3b0a45);
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decorative-element"></div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my creative work, skills, and projects. Click the button below to visit my portfolio!</p>
+        <a href="https://www.canva.com/design/DAGTLvANrXE/Ew9NZ2HiEPCamHI-opPMkw/view" target="_blank">Visit My Portfolio</a>
+    </div>
+</body>
+</html>
